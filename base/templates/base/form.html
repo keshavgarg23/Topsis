@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topsis</title>
+</head>
+<body>
+    <h1>Topsis Web App</h1>
+    <hr>
+    <br>
+    <form style="text-align: center;" action="" method = "POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        <div>
+            <label>File:</label>
+            <input type="file" accept=".csv" required="True" name="file" />
+        </div>
+        <br>
+        <div>
+            <label>Weights:</label>
+            <input type="text" name="weights" required="True" placeholder="Enter weights"/>
+        </div>
+        <br>
+        <div>
+            <label>Impacts:</label>
+            <input type="text" name="impacts" required="True" placeholder="Enter Impacts"/>
+        </div>
+        <br>
+        <div>
+            <label>Email id:</label>
+            <input type="email" name="email" required="True" placeholder="Enter the email id"/>
+        </div>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
